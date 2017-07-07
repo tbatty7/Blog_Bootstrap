@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Day 2 - Bootstrap grids and stuff</title>
+	<meta charset="utf-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- My CSS file -->
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		<div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6"> small left</div>
+		<div class="col-sm-6"> small right</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6"> xsmall left</div>
+		<div class="col-xs-6"> xsmall right</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-6"> large left</div>
+		<div class="col-lg-6"> large right</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset-10" style="background-color: lavender">Offset of 10</div>
+		<div class="col-md-3 col-lg-10 col-sm-6">Multiple column settings for different sizes</div>
+	</div>
+	<h2>&lt;a&gt; links styled as buttons</h2>
+	<a href="" class="btn btn-primary">This is a link</a>
+	<h2>Buttons styled</h2>
+	<br>
+	<button type="button" class="btn btn-default">Default</button>
+	<button type="button" class="btn btn-primary">Primary</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-info">Info</button>
+	<button type="button" class="btn btn-warning">Warning</button>
+	<button type="button" class="btn btn-danger">Danger</button>
+	<button type="button" class="btn btn-link">Link</button>
+	<br>
+	<button type="button" class="btn btn-success btn-lg">Success</button>
+	<button type="button" class="btn btn-success">Success</button>
+	<button type="button" class="btn btn-success btn-sm">Success</button>
+	<button type="button" class="btn btn-success btn-xs">Success</button>
+	<br>
+	<button type="button" class="btn btn-primary btn-block">Block</button>
+	<br>
+	<h2>Submit &lt;input&gt; styled button</h2>
+	<input type="submit" class="btn btn-danger" value="Send" name="">
+	<br>
+	<h2>Glyphicons and buttons, resizing content of span and changing color</h2>
+	<a href="" class="btn btn-info "><span class="glyphicon glyphicon-ok" style="font-size: 5em; color: grey;"></span></a>
+	<br>
+
+<!-- FLOATING DIVS TO RIGHT OR LEFT -->
+
+	<h2>Floating divs or images with Bootstrap</h2>
+	<div class="pull-right" style="background-color: LightSteelBlue">Div floated to right</div>
+	<div class="pull-left" style="background-color: aqua">Div floated to left</div>
+	<!-- clearfix clears floats -->
+	<div class="clearfix"></div>
+	<br>
+	<h2>Blockquotes have very subtle bars on left side with the .blockquote Bootstrap class</h2>
+	<blockquote class="blockquote">
+		<p>This is a cool quote that keeps going and going and has lots of brilliant insights that makes you stop and consider your life...or maybe it is just funny.</p>
+		<footer>Quote by <cite title="Credible Guy">Some Credible Guy</cite></footer>
+	</blockquote>
+	<blockquote class="blockquote-reverse">
+		<p>This quote is reversed - It is still a cool quote that keeps going and going and has lots of brilliant insights that makes you stop and consider your life...or maybe it is just funny.</p>
+		<footer>Quote by <cite title="Credible Guy">Some Credible Guy</cite></footer>
+	</blockquote>
+	<br>
+
+<!-- LISTS -->
+
+	<h2>Lists can be easily unstyled or made inline</h2>
+	<ul class="list-unstyled">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ul>
+	<h4>Inline list</h4>
+	<ul class="list-inline">
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ul>
+	<br>
+	<h2>Bootstrap formats code in cool ways (or at least slightly different) without classes</h2>
+	<code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+	<br>
+	Change directory with <kbd>cd</kbd>
+	<br>
+	To edit settings, press <kbd>ctrl + ,</kbd>
+	<br>
+	<h2>Text color classes</h2>
+	<p class="text-primary">Hello World</p>
+	<p class="text-info">Hello World</p>
+	<p class="text-warning">Hello World</p>
+	<p class="text-danger">Hello World</p>
+	<p class="text-success">Hello World</p>
+	<p class="text-muted">Hello World</p>
+	<br>
+
+<!-- BACKGROUND COLORS -->
+
+	<h2>Background color classes</h2>
+	<p class="bg-primary">Hello World</p>
+	<p class="bg-info">Hello World</p>
+	<p class="bg-warning">Hello World</p>
+	<p class="bg-danger">Hello World</p>
+	<p class="bg-success">Hello World</p>
+	<hr>
+
+<!-- FORMS -->
+
+	<h2>Forms with CSS <small>if I use the class .form-inline in the opening form tag, it will become inline</small></h2>
+	<form>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" class="form-control" placeholder="Add Name" name="">
+		</div>
+		<div class="form-group">
+			<label>Email</label>
+			<input type="email" class="form-control" placeholder="Add Email" name="">
+		</div>
+		<div class="form-group">
+			<label>Message</label>
+			<textarea class="form-control" placeholder="Add Message"></textarea>
+		</div>
+		<div class="form-group">
+			<label>Gender Drop down selector</label>
+				<select class="form-control">
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+				</select>
+		</div>
+		<div class="form-group">
+			<label>Upload File</label>
+			<input type="file">
+			<p class="help-block">Only png and jpg allowed</p>
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name=""> Check me if you are cool enough
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name=""> Check me if you are not cool but know it
+			</label>
+			<br>
+			<label>
+				<input type="checkbox" name=""> Check me if you wish you were cool
+			</label>
+		</div>
+	</form>
+	<br>
+	<h2>They also do tables <small>I am not interested in tables</small></h2>
+	<p>.table .table-striped .table-bordered .table-hover .table-condensed in table opening tag</p>
+	<p>.danger or any other of the colors in a &lt;tr&gt; will highlight the row</p>
+	<br>
+	
+<!-- PANELS WITH ROUNDED CORNERS -->
+
+	<h2>Panels <small>basically text boxes with slightly rounded corners</small></h2>
+	<div class="panel panel-danger">
+		<div class="panel-heading">
+			<h3 class="panel-title">Panel Title</h3>
+		</div>
+		<div class="panel-body">
+			Panel content
+		</div>
+		<div class="panel-footer">Panel Footer <small>If the panel footer is not included, the bottom corners of panel-body are rounded.</small></div>
+	</div>
+	<br>
+
+<!-- WELLS -->
+
+	<h2>Wells are basically just text boxes that look a little different</h2>
+	<div class="well">This is a well</div>
+	<div class="well well-lg">This is a large well</div>
+	<div class="well well-sm">This is a small well</div>
+	<br>
+
+<!-- ALERTS -->
+
+	<h2>Alerts just seem to be text boxes also</h2>
+	<div class="alert alert-success">This is an alert with success</div>
+	<div class="alert alert-warning">This is an alert with warning</div>
+	<div class="alert alert-danger">This is an alert with danger</div>
+	<div class="alert alert-info">This is an alert with info</div>
+	<p class="h3">But alerts can also be given a close button</p>
+	<div class="alert-info alert alert-dismissible" role="alert">
+	<button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+	You can close this alert box
+	</div>
+
+	<div class="alert alert-danger fade in">
+	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	This is another way to do it.  When you close this box, it fades out if you add the classes .fade and .in
+	</div>
+	<br>
+
+<!-- PROGRESS BARS -->
+
+	<div class="progress">
+		<div class="progress-bar" style="width:50%;">
+			50%
+		</div>
+		<div class="progress-bar progress-bar-success" style="width:25%;">
+			25%
+		</div>
+	</div>	
+	<div class="progress">
+		<div class="progress-bar progress-bar-primary progress-bar-striped" style="width:85%;">
+			85%
+		</div>
+	</div>	
+	<div class="progress">
+		<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width:99%;">
+			99%
+		</div>
+
+	</div>
+	<br>
+
+<!-- LABELS -->
+
+	<h2>Labels are just small containers that look like buttons</h2>
+	<span class="label label-default">Default</span>
+	<span class="label label-info">Info</span>
+	<span class="label label-primary">Primary</span>
+	<span class="label label-warning">Warning</span>
+	<span class="label label-danger">Danger</span>
+	<span class="label label-success">Success</span>
+	<br>
+
+<!-- BADGES -->
+
+	<h2>Badges are like things that look like notifications</h2>
+	<a href="#">Inbox <span class="badge">50</span></a>
+	<button class="btn btn-primary" type="button">
+		Messages <span class="badge">2</span>
+	</button>
+	<br>
+
+<!-- IMAGES -->
+
+	<h2>Image size formatting</h2>
+	<img class="img-rounded" src="images/boardroom2.jpg" alt="boardroom">
+	<img class="img-circle" src="images/boardroom2.jpg" alt="boardroom">
+	<img class="thumbnail" src="images/boardroom2.jpg" alt="boardroom">
+	<br>
+
+<!-- NAVBAR -->
+
+	<h2>Navbar!  Finally!!</h2>
+	<nav class="navbar navbar-default"> <!--you can use navbar-inverse to make it dark-->
+		<div class="container-fluid">
+
+	<!-- Logo -->
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">Brand Name?</a>
+			</div>
+			
+	<!-- Menu Items -->
+			<div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+
+					<!-- Drop Down Menu -->
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Friends</a></li>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">So Much Fun</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+				<!-- Right Align -->
+				<!-- To align right, you create a new <ul> but put it in the same <div> -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<br>
+
+<!-- COLLAPSEABLE NAVBAR -->
+	<h2>Collapseable Navbar is done a bit differently</h2>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+
+		<!-- Logo -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="mainNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a  class="navbar-brand" href="#">BRAND</a>
+			</div>
+
+		<!-- Menu Items *TO BE COLLAPSED* -->
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="nav navbar-nav">
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">About</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+	<br>
+
+<!-- NAVBAR ON SIDE OF SCREEN WILL HAVE TO BE DONE ON SEPERATE DOCUMENT -->
+
+	<h2>Side Navbar with nav-tabs <small>They are basically buttons and I had to add CSS styling to change the &lt;li&gt; to block level so they would stack on top of each other and change the width to 100% to fill the width of the column so they would fill 30% of the screen. </small></h2>
+	<div class="row">
+	
+			<ul class = "col-md-4 nav nav-tabs">
+				<li><a href="#">Link one</a></li>
+				<li><a href="#">Link two</a></li>
+				<li><a href="#">Link three</a></li>
+			</ul>
+		<div class="col-md-8">
+			This is the main text so I satisfy the requirement of the Bootstrap Blog Assignment.
+
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+<!-- ACCORDION -->
+	<h2>Accordion <small>The styling is messed up because of the pseudo classes on my personal CSS file.  This has the proper colors on my Bootstrap Blog project.  I have these two set in a row with col-md-6 on each one.</small></h2>
+	<div class="row">
+	<!-- First Accordion, on left side -->
+		<section class="panel-group col-md-6" id="myAccordian">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center" data-target="#panel-1" data-toggle="collapse">Ninja Style</h3>
+				</div>
+				<div class="panel-collapse collapse" id="panel-1">
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- Second Accordion on right side -->
+		<section class="panel-group col-md-6" id="myAccordian2">
+			<div class="panel panel-danger">
+				<div class="panel-heading">
+					<h3 class="panel-title text-center" data-target="#panel-2" data-toggle="collapse">Gundam Style</h3>
+				</div>
+				<div class="panel-collapse collapse" id="panel-2">
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	<!-- End Second Accordion -->
+	</div>
+
+	<!-- Accordions that open exclusively - the id must be exclusive, both data parents linked to the same one.-->
+	<h2>You can also set Accordian to only allow one to open at a time.  Can you nest them inside each other? <small>These ones look better.  They should both be in the same panel-group div</small></h2>
+	<div class="panel-group" id="myAccordian3">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center" data-parent="#myAccordian3" data-target="#panel-3" data-toggle="collapse">Ninja Style</h3>
+			</div>
+			<div class="panel-collapse collapse" id="panel-3">
+				<div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+
+<!-- Second Accordion -->
+
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center" data-parent="#myAccordian3" data-target="#panel-4" data-toggle="collapse">Gundam Style</h3>
+			</div>
+			<div class="panel-collapse collapse" id="panel-4">
+				<div class="panel-body">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Second Accordion -->
+
+<!-- TOOLTIPS -->
+	
+	<div class="jumbotron">
+		<h2>This is a Jumbotron with tooltips in it</h2>
+		<p>Lorem ipsum dolor sit amet, <a href="#" data-tooltip title="This is a common greeting among cowboys down South">Howdy</a> consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate <a href="#" data-tooltip title="Tooltips require a line of JQuery code in a &lt;script&gt; tag to be put in the html document as well as the JQuery link or they will not look like this.">JQuery </a>velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+<!-- POPOVERS -->
+	<div class="row">
+		<section class="col-sm-8 col-sm-offset-2">
+			<button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="left" data-content="This message is popping over the text when you click on it.  It stays up even if you click somewhere else, unless you click the button again.">Popover Button</button>
+			<button type="button" class="btn btn-danger" data-container="body" data-toggle="popover" data-placement="top" data-content="This message is popping over the text when you click on it.  It stays up even if you click somewhere else, unless you click the button again.">Popover Button</button>
+			<button type="button" class="btn btn-info" data-container="body" data-toggle="popover" data-placement="bottom" data-content="This message is popping over the text when you click on it.  You can click anywhere on the screen and it will close this popover." data-trigger="focus">Popover Button w/ focus</button>
+			<button type="button" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="right" data-content="This message is popping over the text when you click on it.  You can click anywhere on the screen and it will close this popover." data-trigger="focus">Popover Button w/ focus</button>
+		</section>	
+	</div>
+	<br>
+
+<!-- MODAL -->
+
+
+	<div class="alert alert-success">
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+			Click for Modal Popup
+		</button>
+
+		<div class="modal fade" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3>Goodbye</h3>
+					</div>
+					<div class="modal-body">
+						<p>All good things must come to an end, and this is the last cool button on my website.  If this were a video game, I would be obligated to beg you to keep playing, but I am sure you have things to do.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<footer class="well">
+	This is a footer so the bottom isn't so close to the bottom edge of the window.
+</footer>
+<!-- JQuery script for Tooltip -->
+<script>
+	$(function(){
+		$('[data-tooltip]').tooltip();
+	});
+	/*The script below is for the popover*/
+	$(function(){
+		$('[data-toggle="popover"]').popover();
+	});
+</script>
+</body>
+</html>

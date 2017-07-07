@@ -1,0 +1,14 @@
+/*Bootstrap classroom learning*/
+
+.row div:nth-child(1)	{
+	background-color: tan;
+}
+
+.row div:nth-child(2)	{
+	background-color: grey;
+}
+
+.nav-tabs li {
+	display: block;
+	width: 100%;
+}
